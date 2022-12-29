@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensies Al Forno Lier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main id="main">
+        <h1>Recensies Al Forno Lier</h1>
+        <div class="box" id="firstBox">
+            <div class="upper">
+                <div class="pic">
+                    <img class="profile" src="./img/man.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">Alfonso das Oliveiras</p>
+                    <p class="date">02/10/2022</p>
+                </div>
+            </div>
+            <div class="lower">
+                <p>Very nice restaurant, I have visited it twice in Lier and once in Antwerp. The pizza was top level. I like to compare the margheritta's from different restaurants. In Al Forno they're surely one of best. Service takes the expecte length of time, for my girlfriend and I it only took about 40min on a very busy day. The servers are very nice and wrote our order quickly. Worth visiting.</p>
+            </div>
+        </div>
+        <div class="box" id="firstBox">
+            <div class="upper">
+                <div class="pic">
+                    <img class="profile" src="./img/woman.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">Marta Vyntewyck</p>
+                    <p class="date">08/10/2022</p>
+                </div>
+            </div>
+            <div class="lower">
+                <p>Fijne ervaring. Ik heb de pasta carbonara gevraagd en het was heel lekker. De serveerders waren vriendelijk en gaven zelfs tips over de beste gerechten. Het eten duurde 25 minuten om bereid te worden, tip top. </p>
+            </div>
+        </div>
+        <div class="box" id="firstBox">
+            <div class="upper">
+                <div class="pic">
+                    <img class="profile" src="./img/woman.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">Jenthe van Oudeberghe</p>
+                    <p class="date">04/11/2022</p>
+                </div>
+            </div>
+            <div class="lower">
+                <p>Dit is mijn eerste keer in Al Forno in Lier, geweldige ervaring. Met mijn man en 3 kinderen hebben we met zonder reservatie een tafel gevonden. De serveerder kwam meteen en gaf ons de menu's, hij verteld ons zijn persoonlijke favorieten en verder info. We hebben 3 margheritta's besteld voor onze zonen en 2 spaghetti bolognese voor mijn man en voor mij. Het eten kwam in ongeveer 40minuten wat vrij snel was. Het was heel lekker. We zullen dit restaurant zeker nog bezoeken. </p>
+            </div>
+        </div>
+        <div class="recensieBox" id="rcc">
+            <label for="fNaam">Naam</label>
+            <br>
+            <input type="text" name="naam" id="fNaam">
+            <br>
+            <label for="geslacht">Geslacht</label>
+            <br>
+            <label for="man">Man</label>
+            <input type="radio" name="geslacht" id="man" value="man">
+            <label for="vrouw">Vrouw</label>
+            <input type="radio" name="geslacht" id="vrouw" value="vrouw">
+            <br>
+            <label for="frecensie">Recensie Al Forno Lier</label>
+            <br>
+            <textarea type="text" name="recensie" id="frecensie"></textarea>
+            <br>
+            <button id="submit" onclick="submit()">Submit</button>
+        </div>
+   </main>
+   <script src="./form.js"></script>
+</body>
+</html>

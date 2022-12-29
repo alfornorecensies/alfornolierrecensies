@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$font : 'Poppins', sans-serif;
+
+@mixin displayFlex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+body{
+    @include displayFlex(column, center, center);
+    main{
+        width: 60vw;
+        min-height: 95vh;
+        @include displayFlex(column, space-evenly, center);
+        .box{
+            width: 100%;
+            height: auto;
+            border: 3px solid red;
+            border-radius: 5px;
+            margin: 1vh;
+            .upper{
+                height: 5vh;
+                width: 100%;
+                @include displayFlex(row, space-between, center);
+                .profile{
+                    width: 4vh;
+                    height: auto;
+                    @include displayFlex(column, center, center);
+                }
+                .info{
+                    width: 85%;
+                    height: 5vh;
+                    .name{
+                        font-weight: bold;
+                    }
+                    .date{
+                        color: rgb(56, 56, 56);
+                    }
+                }
+            }
+            .lower{
+                height: auto;
+                width: 100%;
+                padding: 8px;
+            }
+        }
+        .recensieBox{
+            width: 100%;
+            height: 40vh;
+            #fNaam{
+                width: 50%;
+            }
+            #frecensie{
+                width: 100%;
+                min-height: 50%;
+            }
+            #submit{
+                padding: 10px;
+                border: 1px solid transparent;
+                margin: 3px;
+                &:hover{
+                    border: 1px solid red;
+                    cursor: pointer;
+                    transition: 0.4s ease;
+                }
+            }
+        }
+    }
+}
